@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thêm mới khách hàng</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="app">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="./images/SSILogo.png" alt="SSI Logo" >
+            </div>
+            <div class="navbar-left">
+              <ul class="menu">
+                <li>Q.lý người dùng</li>
+                <li>Q.lý tham số hệ thống</li>
+                <li>Q.lý vận hành</li>
+                <li class="active">Khách hàng</li>
+                <li>Tiền</li>
+                <li>Lưu ký</li>
+                <li>Thực hiện quyền</li>
+                <li>Tín dụng</li>
+                <li>Lệnh</li>
+                <li>Giao dịch VSD</li>
+                <li>Quản trị rủi ro</li>
+              </ul>
+            </div>
+            <div class="navbar-right">
+              <div class="navbar-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Mã giao dịch" class="search">
+              </div>
+              
+              
+              <div class="noti">
+                <i class="fa-solid fa-bell"></i>
+              </div>
+              <div class="avatar-container">
+                <img src="./images/avt.png" alt="user's avatar" class="avatar">
+              </div>
+            </div>
+          </nav>
+          
+        
+          <!-- Tabs -->
+          <div class="tabs">
+            <button class="tab active">Quản lý TTKH</button>
+            <button class="tab1">Quản lý tài khoản</button>
+            <button class="tab">
+              Giao dịch
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <button class="tab">Xác nhận giao dịch</button>
+            <button class="tab">
+              QL cấp MSGĐ
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <button class="tab">Xác nhận NĐT chuyên nghiệp</button>
+            <button class="tab">
+              Kiểm soát & đối chiếu
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <button class="tab">Đẩy diện lên VSD</button>
+            <button class="tab">
+              Tra cứu
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        
+          <div class="page-header">
+            <h2>Thêm mới khách hàng</h2>
+            <div class="header-actions">
+              <button class="btn">
+                <i class="fa-solid fa-magnifying-glass icon-header"></i>
+                 Tìm kiếm
+                </button>
+              <button class="btn">
+                <i class="fa-solid fa-file-circle-plus icon-header"></i>
+                 Thêm mới
+                 <div class="divider"></div>
+                </button>
+              <button class="btn btn-opacity">
+                <i class="fa-solid fa-file-circle-check"></i>
+                Duyệt
+
+              </button>
+              <button class="btn btn-opacity">
+                <i class="fa-solid fa-file-circle-xmark"></i>
+                Từ chối
+              </button>
+              <button class="btn btn-opacity">
+                <i class="fa-solid fa-circle-xmark icon-header"></i>
+                Huỷ
+                <div class="divider"></div>
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-floppy-disk icon-header"></i>
+                Lưu
+              </button>
+              <button class="btn btn-opacity">
+                <i class="fa-solid fa-trash icon-header"></i>
+                Xoá
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-clipboard icon-header"></i>
+                Copy
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-arrows-rotate icon-header"></i>
+                Refresh
+                <div class="divider"></div>
+              </button>
+              <button class="btn btn-opacity">
+                <i class="fa-solid fa-clock-rotate-left icon-header"></i>
+                Audit
+              </button>
+              <button class="btn">
+                <i class="fa-solid fa-file-arrow-up icon-header"></i>
+                Import file
+                <div class="divider"></div>
+              </button>
+              <button class="btn">Input new infomations</button>
+            </div>
+          </div>
+          
+
+
+          <!-- Form -->
+          <div class="container">
+            <div class="customer-info-row">
+              <div class="field">
+                <label class="field-label">Mã Khách hàng</label>
+                <div class="cus_id">
+                  <span >001.111222</span>
+                </div>
+              </div>
+          
+              <button class="generate-btn">
+                <i class="fas fa-pen"></i> Sinh mã
+              </button>
+          
+              <div class="field2">
+                <div class="field">
+                  <label class="field-label">Số TKLK</label>
+                  <div class="cus_id">
+                    <span >003C.111222</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-controller">
+              <div class="nav-tab-list">
+                <div class="nav-tab active">Thông tin chung</div>
+                <div class="nav-tab">Người đại diện</div>
+                <div class="nav-tab">Liên hệ</div>
+                <div class="nav-tab">TCPH</div>
+                <div class="nav-tab">Ủy quyền</div>
+                <div class="nav-tab">Nhận thông báo</div>
+                <div class="nav-tab">Upload chứng từ</div>
+                <div class="nav-tab">Hạn mức chuyển tiền online</div>
+              </div>
+            </div>
+            <div class="container-body">
+              <!-- Row 1: Loại NĐT & Trading Code -->
+              <div class="form-row">
+                <div class="form-col1">
+                  <div class="required-div">
+                    <label class="required">Loại NĐT</label>
+                  </div>
+                  <select>
+                    <option class="input-half">Cá nhân trong nước</option>
+                  </select>
+                </div>
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label class="tcode">Trading code</label>
+                  </div>
+                  <div class="input-wrap">
+                    <input type="text" class="input-half" disabled />
+                  </div>
+                </div>
+                
+              </div>
+            
+              <!-- Row 2: Radio & Ngày cấp Trading code -->
+              <div class="form-row">
+                <div class="form-col1">
+                  
+                  <div class="radio-options">
+                    <label><input type="radio" name="service" /> Omnibus - U</label>
+                    <label><input type="radio" name="service" /> Omnibus - D</label>
+                    <label><input type="radio" name="service" /> Custodian</label>
+                    <label><input type="radio" name="service" /> Asset management</label>
+                    <label><input type="radio" name="service" /> Mutual fund</label>
+                    <label><input type="radio" name="service" /> Enable sub-Account management</label>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Row 3: Tên đầy đủ -->
+              <div class="form-row">
+                <div class="form-col1">
+                  <div class="required-div">
+                    <label class="required">Tên đầy đủ</label>
+                  </div>
+                  <input type="text" placeholder="Nhập tên đầy đủ" />
+                </div>
+
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label class="input-half ">Ngày cấp Trading code</label>
+                  </div>
+                  
+                  <input type="date" class="input-half" value="2022-05-02" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-col1" style="justify-content: space-between;">
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Tên viết tắt/tên khác</label>
+                    </div>
+                    
+                    <input type="text" class="input-half"  />
+                  </div>
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Loại KH</label>
+                    </div>
+                    
+                    <select>
+                      <option class="input-half">KH thông thường</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label>Nơi cấp Trading code</label>
+                  </div>
+                  
+                  <input type="text" class="input-half"  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-col1" style="justify-content: space-between;">
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label style="color: red;">Mobile Number</label>
+                    </div>
+                    
+                    <input type="text" class="input-half"  />
+                  </div>
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Home Number</label>
+                    </div>
+                    <input type="text" class="input-half"  />
+                    
+                  </div>
+                </div>
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label style="color: red;">Email</label>
+                  </div>
+                  
+                  <input type="text" class="input-half"  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-col1">
+                  <div class="required-div">
+                    <label class="required" >Địa chỉ liên lạc</label>
+                  </div>
+                  <input type="text"  />
+                </div>
+
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label>FAX</label>
+                  </div>
+                  
+                  <input type="text" class="input-half" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-col1" style="justify-content: space-between;">
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label style="color: red;">Ngày sinh</label>
+                    </div>
+                    
+                    <input type="date" class="input-half" value="2022-05-02"  />
+                  </div>
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Giới tính</label>
+                    </div>
+                    <select name="" id="">
+                      <option value="">Nam</option>
+                    </select>
+                    
+                  </div>
+                </div>
+                
+              </div>
+              <div class="form-row">
+                <div class="form-col1" style="justify-content: space-between;">
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label style="color: red;">Loại giấy tờ</label>
+                    </div>
+                    
+                    <select name="" id="">
+                      <option value="">Căn cước công dân</option>
+                    </select>
+                  </div>
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label style="color: red;">Số giấy tờ</label>
+                    </div>
+                    <input type="text" class="input-half"  />
+                    
+                  </div>
+                </div>
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label style="color: red;">Nơi cấp</label>
+                  </div>
+                  
+                  <input type="text" class="input-half"  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-col1" style="justify-content: space-between;">
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label style="color: red;">Ngày cấp</label>
+                    </div>
+                    <input type="date" class="input-half" value="2022-05-02" />
+                    
+                  </div>
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label style="color: red; ">Ngày hết hiệu lực</label>
+                    </div>
+                    <input type="date" class="input-half" value="2037-05-02"  />
+                    
+                  </div>
+                </div>
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label style="color: red;">Mã số thuế</label>
+                  </div>
+                  
+                  <input type="text" class="input-half"  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-col1" style="justify-content: space-between;">
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Số thẻ cư trú</label>
+                    </div>
+                    <input type="text" class="input-half"  />
+                    
+                  </div>
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Ngày hiệu lực thẻ cư trú</label>
+                    </div>
+                    <input type="date" class="input-half" value="2037-05-02"  />
+                    
+                  </div>
+                </div>
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label>Ngày hết hạn thẻ cư trú</label>
+                  </div>
+                  
+                  <input type="date" class="input-half" value="2037-05-02" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-col1" style="justify-content: space-between;">
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Nơi sinh</label>
+                    </div>
+                    <select name="" id="">
+                      <option value="">An Giang</option>
+                    </select>
+                    
+                  </div>
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Quốc gia cư trú</label>
+                    </div>
+                    <select name="" id="">
+                      <option value="">Viet Nam</option>
+                    </select>
+                    
+                  </div>
+                </div>
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label style="color: red;">Quốc tịch</label>
+                  </div>
+                  
+                  <select name="" id="">
+                    <option value="">Viet Nam</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row" style="align-items: flex-start; gap: 40px;">
+                <label class="checkbox-group">
+                  <input type="checkbox" id="fatca" />
+                  <span>FATCA</span>
+                </label>
+              
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label style="color: red;">Mã tỉnh thành</label>
+                  </div>
+                  <select class="input-half">
+                    <option>An Giang</option>
+                    <option>Hà Nội</option>
+                    <option>TP. HCM</option>
+                  </select>
+                </div>
+                
+              </div>
+              <div class="form-row">
+                <div class="form-col1" style="justify-content: space-between;">
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label style="color: red;">Cán bộ môi giới</label>
+                    </div>
+                    
+                    <input type="text" class="input-half" placeholder="CBMG mặc định theo chi nhánh"  />
+                  </div>
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Chi nhánh</label>
+                    </div>
+                    <input type="text" value="Hà Nội" class="input-half" disabled />
+                  </div>
+                  
+                </div>
+                
+              </div>
+              <div class="form-row">
+                <div class="form-col1" style="justify-content: space-between;">
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Kênh mở tài khoản</label>
+                    </div>
+                    
+                    <select class="input-half" name="" id="">
+                      <option value="">Trực tiếp tại quầy</option>
+                    </select>
+                  </div>
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Mã nhân viên</label>
+                    </div>
+                    <input type="text"  class="input-half"  />
+                  </div>
+                  
+                </div>
+                
+              </div>
+              <div class="form-row">
+                <div class="form-col1" style="justify-content: space-between;">
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label style="color: red;">Nguồn giới thiệu</label>
+                    </div>
+                    <select name="" id="">
+                      <option value="">Từ Runner</option>
+                    </select>
+                  </div>
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label style="color: red;">Người giới thiệu</label>
+                    </div>
+                    <select name="" id=""></select>
+                    
+                  </div>
+                </div>
+                <div class="form-col2">
+                  <div class="label-wrap-vertical">
+                    <label class="required-label" style="color: red;">
+                      Ngày hết hiệu lực của<br>người giới thiệu
+                    </label>
+                  </div>
+                  <input type="date" class="input-half" value="2022-05-02" />
+                </div>
+                
+                
+              </div>
+              <div class="form-row">
+                <div class="form-col1" style="justify-content: space-between;">
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label>Vốn đăng ký</label>
+                    </div>
+                    <input type="text" class="input-half" name="" id="">
+                    
+                  </div>
+                  <div class="form-col2">
+                    <div class="label-wrap">
+                      <label style="color: red;">Nhóm chữ ký</label>
+                    </div>
+                    <select name="" id="">
+                      <option value="">Chủ tài khoản</option>
+                    </select>
+                    
+                  </div>
+                </div>
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label>Trạng thái</label>
+                  </div>
+                  
+                  <select name="" id="" >
+                    <option value="">Chờ duyệt</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-col1">
+                  <div class="required-div">
+                    <label class="required">Mô tả thêm</label>
+                  </div>
+                  <input type="text"  />
+                </div>
+
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label>Ngày mở</label>
+                  </div>
+                  
+                  <input type="date" class="input-half" value="2022-10-11" />
+                </div>
+              </div>
+              <div class="form-row">
+                <!-- Nhãn và khung upload -->
+                <div class="upload-group">
+                  <label class="required-div">File Chữ ký</label>
+                  <div class="upload-area">
+                    <textarea class="upload-display" readonly></textarea>
+                    <button class="upload-btn">
+                      <i class="fa-solid fa-upload"></i> Tải tệp lên
+                    </button>
+                  </div>
+                </div>
+              
+                <!-- Trạng thái hồ sơ -->
+                <div class="form-col2">
+                  <div class="label-wrap">
+                    <label>Trạng thái hồ sơ</label>
+                  </div>
+                  <select class="input-half">
+                    <option>Chưa đủ hồ sơ</option>
+                    <option>Đã hoàn tất</option>
+                    <option>Đang xử lý</option>
+                  </select>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+            
+          </div>
+    </div>
+
+</body>
+</html>
