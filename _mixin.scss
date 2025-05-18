@@ -1,0 +1,6 @@
+
+@mixin screen($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
